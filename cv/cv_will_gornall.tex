@@ -1,0 +1,191 @@
+\documentclass[11pt]{article}
+
+% Packages and setup
+\usepackage[margin=0.75in]{geometry}
+\usepackage{microtype, cmbright, titlesec, enumitem, fancyhdr, lastpage, hyperref, url, multirow, enumitem}
+
+
+% Typography settings
+\urlstyle{same}
+\setlength{\parindent}{0in}
+\clubpenalty=10000
+\widowpenalty=10000
+
+% List settings
+\newlist{datelist}{itemize}{1}
+\setlist[datelist]{leftmargin=2cm, align=left, labelwidth=*, label={},  }
+
+\newlist{nondatelist}{itemize}{1}
+\setlist[nondatelist]{leftmargin=0pt, label={},  labelwidth=0pt, labelsep=0pt,}
+
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\hfill CV: Will Gornall \hfill \thepage/\pageref{LastPage}  \hfill  2024-09-02 \hfill}
+
+\begin{document}
+
+% Name block
+\begin{tabular}{@{}l@{\quad\quad}l}
+\multirow{2}{*}{\huge\textbf{WILL GORNALL}} & 
+\href{mailto:will.gornall@sauder.ubc.ca}{\nolinkurl{will.gornall@ubc.ca}} \ $\cdot$ \
+\href{https://willgornall.com}{willgornall.com} \ $\cdot$ \ 
+\href{tel:1 604 827 4372}{1 604 827 4372} 
+\\
+&  
+UBC \ $\cdot$ \
+2053 MAIN MALL \ $\cdot$ \ 
+VANCOUVER BC\ \ V6T 1Z2 CA
+\end{tabular}
+
+
+% Sections
+\paragraph{ACADEMIC APPOINTMENTS}
+\begin{datelist}
+    \item[2023--] Associate Professor of Finance, University of British Columbia, Sauder School
+    \item[2015--23] Assistant Professor of Finance, University of British Columbia, Sauder School
+\end{datelist}
+
+\paragraph{EDUCATION}
+\begin{datelist}
+    \item[2010--15] Doctor of Philosophy in Finance, Stanford Graduate School of Business
+    \item[2009--10] Master of Quantitative Finance, University of Waterloo
+    \item[2005--09] Bachelor of Mathematics, University of Waterloo
+\end{datelist}
+
+\paragraph{PUBLICATIONS}
+\begin{nondatelist}
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4235337}{%
+        ``The Value of Privacy and the Choice of Limited Partners by Venture Capitalists,'' 
+        with Rustam Abuzov and Ilya A. Strebulaev, 
+        2024, accepted at \textbf{Journal of Financial Economics}}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4071214}{%
+        ``Customer Data Access and Fintech Entry: Early Evidence from Open Banking,'' 
+        with Tania Babina, Saleem A. Bahaj, Greg Buchak, Filippo De Marco, Angus K. Foulis, Francesco Mazzola, and Tong Yu, 
+        2024, accepted at \textbf{Journal of Financial Economics}}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3912230}{%
+        ``Do Employees Cheer for Private Equity? The Heterogeneous Effects of Buyouts on Job Quality,'' 
+        with Oleg Gredil, Sabrina T Howell, Xing Liu, and Jason Sockin, 
+        2023, accepted at \textbf{Management Science}}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3301982}{%
+        ``Gender, Race, and Entrepreneurship: A Randomized Field Experiment on Venture Capitalists and Angels,'' 
+        with Ilya Strebulaev, 
+        2022, accepted at \textbf{Management Science}}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3669345}{%
+        ``Venture Capitalists and COVID-19?'' 
+        with Paul Gompers, Steven Kaplan, and Ilya Strebulaev, 
+        2021, \textbf{Journal of Financial and Quantitative Analysis} 56(7), 2474--2499}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2955455}{%
+        ``Squaring Venture Capital Valuations With Reality,'' 
+        with Ilya Strebulaev, 
+        2020, \textbf{Journal of Financial Economics} 135(1), 120--143}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2801385}{%
+        ``How Do Venture Capitalists Make Decisions?'' 
+        with Paul Gompers, Steven Kaplan, and Ilya Strebulaev, 
+        2020, \textbf{Journal of Financial Economics} 135(1), 169--190}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2347107}{%
+        ``Financing as a Supply Chain: The Capital Structure of Banks and Borrowers,'' 
+        with Ilya Strebulaev, 
+        2018, \textbf{Journal of Financial Economics} 129(3), 510--530}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1101796}{%
+        ``Locally-Capped Investment Products and the Retail Investor,'' 
+        with Carole Bernard and Phelim Boyle, 
+        2011, \textbf{Journal of Derivatives} 18(4), 72--88}
+\end{nondatelist}
+
+\paragraph{WORKING PAPERS}
+\begin{nondatelist}
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681841}{%
+        ``The Economic Impact of Venture Capital,'' 
+        with Ilya A. Strebulaev, 
+        2021}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3725240}{%
+        ``A Valuation Model of Venture Capital-Backed Companies with Multiple Financing Rounds'' 
+        with Ilya Strebulaev, 
+        2021}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2526574}{%
+        ``Safe Assets and Dangerous Liabilities: How Bank-Level Frictions Explain Bank Seniority,'' 
+        2017}
+\end{nondatelist}
+
+\paragraph{OTHER WORK}
+\begin{nondatelist}
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4038538}{%
+        ``The Contracting and Valuation of Venture Capital-Backed Companies'' 
+        with Ilya Strebulaev, 
+        2023, In: Eckbo, B.E., Phillips, G.M., Sorensen, M. (eds) \textbf{Handbook of the Economics of Corporate Finance}. Amsterdam: North-Holland, an imprint of Elsevier. 1, 3-76}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4038538}{%
+        ``Venture Capital Valuation'' 
+        with Ilya Strebulaev, 
+        2023, In: Cumming, D., Hammer, B. (eds) \textbf{The Palgrave Encyclopedia of Private Equity}. Cham: Springer International Publishing. 1-5.}
+
+    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2801385}{%
+        ``How Venture Capitalists Make Decisions'' 
+        with Paul Gompers, Steven Kaplan, and Ilya Strebulaev, 
+        2021, \textbf{Harvard Business Review}, 99.2 (2021): 70-+}
+\end{nondatelist}
+
+\paragraph{PRESENTATIONS (* denotes pending)}
+\begin{datelist}
+    \item[2024] Federal Reserve Bank of Philadelphia; Carnegie Mellon University, McGill University
+
+    \item[2023] Bank of Canada; Esade Business School, University of Alberta
+
+    \item[2022] Esade Spring Workshop, European Finance Association, Federal Deposit Insurance Corporation Bank Research Conference (scheduled), Northern Finance Association (scheduled), Nova School of Business and Economics Entrepreneurship and Innovation Symposium, Private Equity Research Consortium, University of California Los Angeles Fink Workshop, University of Texas Dallas Fall Finance Conference (scheduled), University of Wisconsin Madison Junior Finance Conference
+
+    \item[2021] Financial Intermediation Research Society, Journal of Financial and Quantitative Analysis Symposium on COVID-19, Northern Finance Association, Pacific Northwest Finance Conference; Ohio State University, Peking University, Workshop on Entrepreneurial Finance and Innovation
+
+    \item[2020] American Economics Association, Southern California Private Equity and Venture Capital
+
+    \item[2019] National Bureau of Economic Research Summer Institute, Northern Finance Association, Private Equity Research Consortium, Rome Junior Finance Conference; Cheung Kong Graduate School of Business, Tsinghua, University of California Berkeley
+
+    \item[2018] Arizona State University Sonoran, Columbia Junior Entrepreneurial Finance and Innovation, Financial Intermediation Research Society, New Frontiers in Banking, Society of Financial Studies, Stanford Finance of Innovation Summit, Western Finance Association; Swiss Finance Institute École Polytechnique Fédérale de Lausanne, University of California San Diego
+
+    \item[2017] American Finance Association, Private Equity Research Consortium Conference, University of California Berkeley Workshop on Finance and Innovation; University of Michigan
+
+    \item[2016] National Bureau of Economic Research Summer Institute, Private Equity Research Consortium, Stanford Graduate School of Business Workshop on Financial Regulation; Australian National University, Carnegie Mellon University, Deakin University, Federal Deposit Insurance Corporation, Monash University, New York University, University of Melbourne
+
+    \item[2015] Norges Bank Conference on Financial Stability, Northern Finance Association Annual Meeting, Pacific North West Finance Conference; Boston University, Columbia University, Imperial College, University of Colorado Boulder, University of Houston, University of Maryland, University of Michigan, University of Southern California, University of Toronto, University of Washington
+
+    \item[2014] Northern Finance Association; Bank of Canada, University of Frankfurt, Imperial College, Ca' Foscari University of Venice, Wilfrid Laurier University
+
+    \item[2013] London Business School Transatlantic Doctoral Conference
+\end{datelist}
+
+\paragraph{TEACHING}
+\begin{datelist}
+    \item[2016--] Venture Capital Financing (Undergraduate/Masters), average rating 4.5/5
+    \item[2016--] Corporate Finance Theory (Doctoral), average rating 4.7/5
+\end{datelist}
+
+\paragraph{AWARDS / GRANTS}
+\begin{datelist}
+    \item[2023] Social Sciences and Humanities Research Council Insight Grant
+    \item[2022] Mitacs Accelerate Grant
+    \item[2021] Jensen Prize for the Best Papers Published in the Journal of Financial Economics in the Areas of Corporate Finance and Organizations (How Do Venture Capitalists Make Decisions?)
+    \item[2021] Doriot Award for the Best Private Equity Research Paper 2021 (How Do Venture Capitalists Make Decisions?)
+    \item[2019--20] UBC Centre for Innovative Data in Economics Research Small Grant
+    \item[2020--21] Phillips, Hager, and North Center for Financial Research Grant
+    \item[2019--22] Social Sciences and Humanities Research Council Insight Development Grant
+    \item[2019--20] UBC Centre for Innovative Data in Economics Research Small Grant
+    \item[2017--19] Social Sciences and Humanities Research Council Insight Development Grant
+    \item[2016--18] UBC Hampton Fund Research Grant
+    \item[2016--18] UBC Sauder Exploratory Grant
+    \item[2010--15] Stanford Graduate School of Business Fellowship
+    \item[2010--14] Social Sciences and Humanities Research Council of Canada Doctoral Fellowship
+\end{datelist}
+
+\end{document}
