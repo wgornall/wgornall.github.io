@@ -37,7 +37,6 @@
       margin-bottom: 0.35rem;
       margin-left: 0.65rem;
       margin-right: 0.65rem;
-      border: 2px solid white;
     } 
     .heading-style {
       color: rgb(0, 33, 69);
@@ -87,7 +86,6 @@ background: #ffffff;
   display: inline-block;      
   font-weight: 600;     
   padding: 0.2rem 0.2rem;    
-  border-radius: 0.25rem;   
   line-height: 1;        
   font-size: 75%;
   border: 1px solid #CCC;
@@ -96,13 +94,13 @@ background: #ffffff;
   text-underline-offset: 2px;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.15);  
 }
-.vc-label       { background: #EEE; }   
-.contracts-label{ background: #F9F4F0; }   
-.pe-label       { background: #F6E4E7; }  
-.survey-label   { background: #DEEBEE; } 
-.valuation-label{ background: #EFF5EC; }  
-.banking-label    { background: #EEF0F9; }   
-.fi-label   { background: #E4F7F2; }  
+.vc-label       { background: #DDD; }   
+.contracts-label{ background: #DDF; }   
+.pe-label       { background: #DFD; }  
+.survey-label   { background: #DFF; } 
+.valuation-label{ background: #FDD; }  
+.banking-label    { background: #FDF; }   
+.fi-label   { background: #FFD; }  
 .extra3-label   { background: #FCF7F2; }  
 .extra4-label   { background: #F1EBF5; }   
 </style>
@@ -147,7 +145,7 @@ background: #ffffff;
     </div>
   </div>
 
-  <div class="elem-style" style="border: 2px solid white; min-width:400px;">
+  <div class="elem-style" style="min-width:400px;">
 Interests (selectable)
         <a class="vc-label block-label" href="javascript:void(0)">VC</a>    
         <a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
@@ -892,40 +890,18 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.block-label')) {
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
-      el.style.border = "2px solid white";
+      el.style.fontWeight = '';     
       el.removeAttribute('data-label-highlight');
     });
   }
 });
-function darkenColor(color, factor = 0.2) {
-  let r, g, b;
 
-  if (color.startsWith('#')) {
-    color = color.slice(1);
-    if (color.length === 3) {
-      color = color.split('').map(c => c + c).join('');
-    }
-    r = parseInt(color.substr(0, 2), 16);
-    g = parseInt(color.substr(2, 2), 16);
-    b = parseInt(color.substr(4, 2), 16);
-  } else if (color.startsWith('rgb')) {
-    [r, g, b] = color.match(/\d+/g).map(Number);
-  } else {
-    throw new Error("Unsupported color format: " + color);
-  }
-
-  r = Math.max(0, Math.floor(r*1.2 - 80));
-  g = Math.max(0, Math.floor(g*1.2 - 80));
-  b = Math.max(0, Math.floor(b*1.2 - 80));
-
-  return `rgb(${r}, ${g}, ${b})`;
-}
 document.querySelectorAll('.block-label').forEach(label => {
   label.addEventListener('click', () => {
 
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
-      el.style.border = "2px solid white";
+      el.style.fontWeight = '';     
       el.removeAttribute('data-label-highlight');
     });
 
@@ -933,12 +909,11 @@ document.querySelectorAll('.block-label').forEach(label => {
     if (!labelClass) return;
 
     const bgColor = getComputedStyle(label).backgroundColor;
-    const borderColor = darkenColor(bgColor,0.3);
     document.querySelectorAll(`.${labelClass}.block-label`).forEach(lbl => {
       const parent = lbl.parentElement;
       if (parent) {
-        parent.style.backgroundColor = bgColor;
-        parent.style.border = `2px solid ${borderColor}`;
+        parent.style.backgroundColor = bgColor;  
+        parent.style.fontWeight = 600;     
         parent.setAttribute('data-label-highlight', '');
       }
     });
