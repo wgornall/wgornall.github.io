@@ -107,14 +107,9 @@ background: #ffffff;
 <body>
 
 <div class="mx-auto p-3 p-md-5" style="max-width: 900px;">
-  <div class="d-flex flex-wrap align-items-center justify-content-between" >
+  <div class="d-flex flex-wrap align-items-center" >
     <span class="myname-style text-nowrap">Will Gornall&nbsp;</span>
     <span class="subtitle-style text-nowrap">Associate Professor of Finance&nbsp;</span>
-    <div class="text-nowrap">
-      <a href="cv/will_gornall_cv.pdf">CV</a>&nbsp;&nbsp;
-      <a href="#Papers">Papers</a>&nbsp;&nbsp;
-      <a href="#Teaching">Teaching&nbsp;Slides</a>
-    </div>
   </div>
   <div class="d-flex flex-wrap align-items-center justify-content-between" >
     <div class=" row d-flex flex-wrap  justify-content-between align-items-center ">
@@ -533,8 +528,6 @@ data-bs-content="cite-gornall2023gender">
   </div>
 
 
-
-
 <template id="cite-babina2025openbanking">
 @article{babina2025openbanking,
 <br>
@@ -876,7 +869,6 @@ document.addEventListener('click', e => {
     });
   }
   if (!e.target.closest('.block-label')) {
-    // Clear all label highlights
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
       el.removeAttribute('data-label-highlight');
@@ -884,27 +876,21 @@ document.addEventListener('click', e => {
   }
 });
 
-// Highlight label logic
 document.querySelectorAll('.block-label').forEach(label => {
   label.addEventListener('click', () => {
 
-    // Clear all previous highlights
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
       el.removeAttribute('data-label-highlight');
     });
 
-    // Get the label class (type) and background color
     const labelClass = [...label.classList].find(c => c !== 'block-label');
     if (!labelClass) return;
 
-    const colour = getComputedStyle(label).backgroundColor;
-
-    // Highlight all parent elements of labels with the same class
     document.querySelectorAll(`.${labelClass}.block-label`).forEach(lbl => {
       const parent = lbl.parentElement;
       if (parent) {
-        parent.style.backgroundColor = colour;
+        parent.style.backgroundColor = getComputedStyle(label).backgroundColor;
         parent.setAttribute('data-label-highlight', '');
       }
     });
