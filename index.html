@@ -897,13 +897,14 @@ document.addEventListener('click', e => {
 });
 
 document.querySelectorAll('.block-label').forEach(label => {
-  label.addEventListener('click', () => {
+  label.addEventListener('click', e => {
 
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
       el.style.fontWeight = '';     
       el.removeAttribute('data-label-highlight');
     });
+    if (e.target.closest('[data-bs-toggle="popover"], .popover'))  return;
 
     const labelClass = [...label.classList].find(c => c !== 'block-label');
     if (!labelClass) return;
