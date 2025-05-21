@@ -33,6 +33,7 @@
     .elem-style {
       margin-top: 0.35rem;
       margin-bottom: 0.35rem;
+      border: 2px solid white;
     } 
     .heading-style {
       color: rgb(0, 33, 69);
@@ -76,7 +77,7 @@ background: #ffffff;
       color: rgb(0, 100, 200); 
 }
 .block-label-link {
-  font-weight: 700;     
+  font-weight: 700;    
 }
 .block-label {
   display: inline-block;      
@@ -86,10 +87,11 @@ background: #ffffff;
   line-height: 1;        
   text-transform: uppercase;
   font-size: 75%;
-  border: 2px solid #fff;   
+  border: 1px solid #CCC;
   border-radius: 0.25rem;  
-      text-decoration: underline dotted; 
-      text-underline-offset: 2px;
+  text-decoration: underline dotted; 
+  text-underline-offset: 2px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);  
 }
 .vc-label       { background: #EEE; }  /* was #D8C8E0 */
 .contracts-label{ background: #F9F4F0; }  /* was #F6EFE9 */
@@ -891,26 +893,53 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.block-label')) {
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
+      el.style.border = "2px solid white";
       el.removeAttribute('data-label-highlight');
     });
   }
 });
+function darkenColor(color, factor = 0.2) {
+  let r, g, b;
 
+  if (color.startsWith('#')) {
+    color = color.slice(1);
+    if (color.length === 3) {
+      color = color.split('').map(c => c + c).join('');
+    }
+    r = parseInt(color.substr(0, 2), 16);
+    g = parseInt(color.substr(2, 2), 16);
+    b = parseInt(color.substr(4, 2), 16);
+  } else if (color.startsWith('rgb')) {
+    [r, g, b] = color.match(/\d+/g).map(Number);
+  } else {
+    throw new Error("Unsupported color format: " + color);
+  }
+
+  r = Math.max(0, Math.floor(r*1.2 - 80));
+  g = Math.max(0, Math.floor(g*1.2 - 80));
+  b = Math.max(0, Math.floor(b*1.2 - 80));
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
 document.querySelectorAll('.block-label').forEach(label => {
   label.addEventListener('click', () => {
 
     document.querySelectorAll('[data-label-highlight]').forEach(el => {
       el.style.backgroundColor = '';
+      el.style.border = "2px solid white";
       el.removeAttribute('data-label-highlight');
     });
 
     const labelClass = [...label.classList].find(c => c !== 'block-label');
     if (!labelClass) return;
 
+    const bgColor = getComputedStyle(label).backgroundColor;
+    const borderColor = darkenColor(bgColor,0.3);
     document.querySelectorAll(`.${labelClass}.block-label`).forEach(lbl => {
       const parent = lbl.parentElement;
       if (parent) {
-        parent.style.backgroundColor = getComputedStyle(label).backgroundColor;
+        parent.style.backgroundColor = bgColor;
+        parent.style.border = `2px solid ${borderColor}`;
         parent.setAttribute('data-label-highlight', '');
       }
     });
