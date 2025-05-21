@@ -17,6 +17,8 @@
   <style>
     .myname-style {
       color: rgb(0, 33, 69);
+      margin-left: 0.65rem;
+      margin-right: 0.65rem;
       font-size: 180%;
       font-weight: 600;
       letter-spacing: 2px;
@@ -33,6 +35,8 @@
     .elem-style {
       margin-top: 0.35rem;
       margin-bottom: 0.35rem;
+      margin-left: 0.65rem;
+      margin-right: 0.65rem;
       border: 2px solid white;
     } 
     .heading-style {
@@ -44,6 +48,8 @@
       margin-top: 0.7rem;
       margin-bottom: 0.3rem;
       display:block;
+      margin-left: 0.65rem;
+      margin-right: 0.65rem;
     } 
     @media (min-width: 800px) {
       .heading-style {
@@ -73,11 +79,9 @@ background: #ffffff;
       background-color: #f8f9fa; 
       min-width: 200px; 
     } 
+
 .block-label-link:hover {
       color: rgb(0, 100, 200); 
-}
-.block-label-link {
-  font-weight: 700;    
 }
 .block-label {
   display: inline-block;      
@@ -91,22 +95,22 @@ background: #ffffff;
   border-radius: 0.25rem;  
   text-decoration: underline dotted; 
   text-underline-offset: 2px;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);  
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.15);  
 }
-.vc-label       { background: #EEE; }  /* was #D8C8E0 */
-.contracts-label{ background: #F9F4F0; }  /* was #F6EFE9 */
-.pe-label       { background: #F6E4E7; }  /* was #F2D9DD */
-.survey-label   { background: #DEEBEE; }  /* was #D0E2E7 */
-.valuation-label{ background: #EFF5EC; }  /* was #E8F0E4 */
-.banking-label    { background: #EEF0F9; }  /* was #E6E9F6 */
-.fi-label   { background: #E4F7F2; }  /* was #EBE3F1 */
-.extra3-label   { background: #FCF7F2; }  /* was #CDE8ED */
-.extra4-label   { background: #F1EBF5; }  /* was #FBF4ED */
+.vc-label       { background: #EEE; }   
+.contracts-label{ background: #F9F4F0; }   
+.pe-label       { background: #F6E4E7; }  
+.survey-label   { background: #DEEBEE; } 
+.valuation-label{ background: #EFF5EC; }  
+.banking-label    { background: #EEF0F9; }   
+.fi-label   { background: #E4F7F2; }  
+.extra3-label   { background: #FCF7F2; }  
+.extra4-label   { background: #F1EBF5; }   
 </style>
 </head>
 <body>
 
-<div class="mx-auto p-3 p-md-5" style="max-width: 900px;">
+<div class="mx-auto p-3 p-md-5" style="max-width:900px">
   <div class="d-flex flex-wrap align-items-center" >
     <span class="myname-style text-nowrap">Will Gornall&nbsp;</span>
     <span class="subtitle-style text-nowrap">Associate&nbsp;Professor&nbsp;of&nbsp;Finance&nbsp;</span>
@@ -114,7 +118,7 @@ background: #ffffff;
   <div class="d-flex flex-wrap align-items-center" >
     <div class=" row d-flex flex-wrap  justify-content-between align-items-center ">
       <div class="col px-3">
-        <img class="img-fluid" src="files/willGornall1small.jpg">                
+        <img class="elem-style img-fluid" style="min-width: 100px;" src="files/willGornall1small.jpg">                
       </div>
       <div class="col px-4">
         <span class="d-block"> Sauder School of Business</span>
@@ -140,15 +144,15 @@ background: #ffffff;
         <a class="d-block text-nowrap" href="files/dogHighRes.jpg" title="Dog photo">
           <img height="16px" width="16px" src="files/dog.png">Dog&nbsp;photo</a>
       </div>
-      <div class="col px-4 ">
+      <div class="col px-4" style="border: 2px solid white;">
         <div class="">Interests (selectable)</div>
-        <div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>    
-        <div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
-        <div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
-        <div class="pe-label block-label"><a class="block-label-link" href="javascript:void(0)">PE</a></div>  
-        <div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Surveys</a></div>  
-        <div class="banking-label block-label"><a class="block-label-link" href="javascript:void(0)">Banking</a></div>  
-        <div class="fi-label block-label"><a class="block-label-link" href="javascript:void(0)">Fintech/Crypto</a></div>  
+        <a class="vc-label block-label" href="javascript:void(0)">VC</a>    
+        <a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
+        <a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
+        <a class="pe-label block-label" href="javascript:void(0)">PE</a>  
+        <a class="survey-label block-label" href="javascript:void(0)">Surveys</a>  
+        <a class="banking-label block-label" href="javascript:void(0)">Banking</a>  
+        <a class="fi-label block-label" href="javascript:void(0)">Fintech/Crypto</a>  
       </div>
     </div>
   </div>
@@ -161,39 +165,39 @@ background: #ffffff;
     <a class="journal-style" href="https://ssrn.com/abstract=4235337">
       The Value of Privacy and the Choice of Limited Partners by Venture Capitalists</a>
       with
-      <a href="https://www.rustamabuzov.com/">Rustam Abuzov</a>
+      <a href="https://www.rustamabuzov.com/">R Abuzov</a>
       and
-      <a href="https://ilyas1.people.stanford.edu/">Ilya A. Strebulaev</a>,
+      <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev</a>,
      <b>Journal of Financial Economics</b> 2025, 169(7), 104063
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-abuzov2025value">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
- <div class="pe-label block-label"><a class="block-label-link" href="javascript:void(0)">PE</a></div>  
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
+ <a class="pe-label block-label" href="javascript:void(0)">PE</a>  
   </div>
   
   <div class="elem-style">
     <a class="journal-style" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4720785">
         Customer Data Access and Fintech Entry: Early Evidence from Open Banking</a>
       with
-      <a href="https://www.taniababina.com/">Tania Babina</a>,
-      <a href="https://sites.google.com/site/saleembahaj/home">Saleem A. Bahaj</a>,
-      <a href="https://sites.google.com/view/greg-buchak/">Greg Buchak</a>,
-      <a href="https://sites.google.com/view/flippodemarco">Filippo De Marco</a>,
-      <a href="https://www.bankofengland.co.uk/research/researchers/angus-foulis">Angus K. Foulis</a>,
-      <a href="https://www.francescomazzola.org/">Francesco Mazzola</a>, and
-      <a href="https://profiles.imperial.ac.uk/t.yu18">Tong Yu</a>,
+      <a href="https://www.taniababina.com/">T Babina</a>,
+      <a href="https://sites.google.com/site/saleembahaj/home">SA Bahaj</a>,
+      <a href="https://sites.google.com/view/greg-buchak/">G Buchak</a>,
+      <a href="https://sites.google.com/view/flippodemarco">F De Marco</a>,
+      <a href="https://www.bankofengland.co.uk/research/researchers/angus-foulis">AK Foulis</a>,
+      <a href="https://www.francescomazzola.org/">F Mazzola</a>, 
+      <a href="https://profiles.imperial.ac.uk/t.yu18">T Yu</a>,
       <b>Journal of Financial Economics</b> 2025, 169(7), 103950
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-babina2025openbanking">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>   
-<div class="fi-label block-label"><a class="block-label-link" href="javascript:void(0)">Fintech/Crypto</a></div>  
-<div class="banking-label block-label"><a class="block-label-link" href="javascript:void(0)">Banking</a></div>  
+<a class="fi-label block-label" href="javascript:void(0)">Fintech/Crypto</a>  
+<a class="banking-label block-label" href="javascript:void(0)">Banking</a>  
     <span class="subtext-style"> 
-      A previous version of this manuscript was distributed as "Customer Data Access and Fintech Entry: Early Evidence from Open Banking" (2022) by Tania Babina, Greg Buchak, and Will Gornall
+      A previous version of this manuscript was distributed as "Customer Data Access and Fintech Entry: Early Evidence from Open Banking" (2022) by T Babina, G Buchak, W Gornall
     </span>
   </div>
 
@@ -202,21 +206,20 @@ background: #ffffff;
       Do Employees Cheer for Private Equity? The Heterogeneous Effects of Buyouts on Job Quality</a>
       with
       <a href="https://freeman.tulane.edu/faculty-research/finance/oleg-gredil">
-        Oleg Gredil,</a>
+        O Gredil,</a>
       <a href="http://www.sabrina-howell.com/">
-        Sabrina T. Howell,</a>
+        ST Howell,</a>
       <a href="https://scholar.google.com/citations?user=bGVdLz4AAAAJ">
-        Xing Liu,</a>
-      and
+        X Liu,</a>
       <a href="https://economics.sas.upenn.edu/people/jason-sockin">
-        Jason Sockin,</a>
+        J Sockin,</a>
       <b>Management Science</b> 2025, 71(5), 4287-4317 
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2025employees">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a> 
- <div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Survey</a></div>  
-<div class="pe-label block-label"><a class="block-label-link" href="javascript:void(0)">PE</a></div>  
+ <a class="survey-label block-label" href="javascript:void(0)">Surveys</a>  
+<a class="pe-label block-label" href="javascript:void(0)">PE</a>  
   </div>
 
   <div class="elem-style">
@@ -224,16 +227,16 @@ background: #ffffff;
         href="https://ssrn.com/abstract=3301982">
       Gender, Race, and Entrepreneurship: A Randomized Field Experiment on Venture Capitalists and Angels</a>
       with <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev,</a>
+        IA Strebulaev,</a>
 
-      Forthcoming in <b>Management Science</b> 
+       <b>Management Science</b> forthcoming 
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" 
 data-bs-content="cite-gornall2023gender">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
- <div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Survey</a></div>  
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+ <a class="survey-label block-label" href="javascript:void(0)">Surveys</a>  
   </div>
 
   <div class="elem-style">
@@ -241,19 +244,18 @@ data-bs-content="cite-gornall2023gender">
       Venture Capitalists and COVID-19</a>
       with
       <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
-        Paul A. Gompers,</a>
+        PA Gompers,</a>
       <a href="https://faculty.chicagobooth.edu/steven-kaplan">
-        Steven N. Kaplan,</a>
-      and
+        SN Kaplan,</a>
       <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev,</a>
+        IA Strebulaev,</a>
       <b>Journal of Financial and Quantitative Analysis</b> 2021, 56(7), 2474-2499
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gompers2021venture">
 	<img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Survey</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="survey-label block-label" href="javascript:void(0)">Surveys</a>   
 
   </div>
 
@@ -263,15 +265,15 @@ data-bs-content="cite-gornall2023gender">
       Squaring Venture Capital Valuations with Reality</a>
       with
       <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev,</a>
+        IA Strebulaev,</a>
       <b>Journal of Financial Economics</b> 2020, 135(1), 120–143; <a href="https://www.pesummitseries.com/wp-content/uploads/2021/04/210406-Doriot-Award_guidelines-PES-2021.pdf">Doriot Award</a>
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2020squaring">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>   
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>   
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
     <span class="subtext-style"> 
     <a href="files/Teaching Slides - Contractual Terms and Valuation.pptx">Teaching slides about post-money valuation and value.</a>
     <a href="https://github.com/wgornall/Squaring_Venture_Capital_Valuations_With_Reality">Code.</a>
@@ -285,20 +287,19 @@ data-bs-content="cite-gornall2023gender">
       How Do Venture Capitalists Make Decisions?</a>
       with
       <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
-        Paul A. Gompers,</a>
+        PA Gompers,</a>
       <a href="https://faculty.chicagobooth.edu/steven-kaplan">
-        Steven N. Kaplan,</a>
-      and
+        SN Kaplan,</a>
       <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev,</a>
+        IA Strebulaev,</a>
       <b>Journal of Financial Economics</b> 2020, 135(1), 169–190; <a href="https://www.jfinec.com/jensen-prize">Jensen Prize</a>
 
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gompers2020venture">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Survey</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="survey-label block-label" href="javascript:void(0)">Surveys</a>   
     <span class="subtext-style"> 
     <a href="https://hbr.org/2021/03/how-venture-capitalists-make-decisions">
       Summarized in this Harvard Business Review article</a>.
@@ -313,15 +314,15 @@ data-bs-content="cite-gornall2023gender">
       Financing as a Supply Chain: The Capital Structure of Banks and Borrowers</a>
       with
       <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev,</a>
+        IA Strebulaev,</a>
       <b>Journal of Financial Economics</b> 2018, 129(3), 510-530
 
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2018financing">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
-<div class="banking-label block-label"><a class="block-label-link" href="javascript:void(0)">Banking</a></div>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
+<a class="banking-label block-label" href="javascript:void(0)">Banking</a>   
 <span class="subtext-style">
     <a href="https://github.com/wgornall/Financing_As_a_Supply_Chain">Code</a>.
 </span>
@@ -331,18 +332,17 @@ data-bs-content="cite-gornall2023gender">
     <a class="journal-style" href="https://ssrn.com/abstract=1101796">
       Locally-Capped Investment Products and the Retail Investor</a>
       with
-      <a href="https://en.grenoble-em.com/node/4191/carole-bernard">Carole Bernard</a>
-      and
+      <a href="https://en.grenoble-em.com/node/4191/carole-bernard">C Bernard</a>
       <a href="https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/phelim-boyle/index.html">
-        Phelim Boyle,</a>
+        P Boyle,</a>
       <b>Journal of Derivatives</b> 2011, 18(4), 72-88
 
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-bernard2011locally">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>   
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>   
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
   </div>
 
   <div class="heading-style" >
@@ -354,14 +354,14 @@ data-bs-content="cite-gornall2023gender">
         href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5036933">
       Perpetual Futures and Basis Risk: Evidence from Cryptocurrency </a>
       with
-      Martin Rinaldi, <a href="https://www.bschool.cuhk.edu.hk/staff/xiao-yizhou/">
-        Yizhou Xiao</a>, 
+      M Rinaldi, <a href="https://www.bschool.cuhk.edu.hk/staff/xiao-yizhou/">
+        Y Xiao</a>, 
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2025perps">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
- <div class="fi-label block-label"><a class="block-label-link" href="javascript:void(0)">Fintech/Crypto</a></div>  
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
+ <a class="fi-label block-label" href="javascript:void(0)">Fintech/Crypto</a>  
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
   </div>
  
   <div class="elem-style">
@@ -370,14 +370,14 @@ data-bs-content="cite-gornall2023gender">
       A Valuation Model of Venture Capital-Backed Companies with Multiple Financing Rounds</a>
       with
       <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev</a>
+        IA Strebulaev</a>
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2021valuation">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-	<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-	<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
-	<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
+	<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+	<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
+	<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
   </div>
 
   <div class="elem-style">
@@ -390,8 +390,8 @@ data-bs-content="cite-gornall2023gender">
         Cite
       </a>
 
-<div class="banking-label block-label"><a class="block-label-link" href="javascript:void(0)">Banking</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
+<a class="banking-label block-label" href="javascript:void(0)">Banking</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
   </div>
 
   <div class="elem-style">
@@ -400,12 +400,12 @@ data-bs-content="cite-gornall2023gender">
       The Economic Impact of VC</a>
       with
       <a href="https://ilyas1.people.stanford.edu/">
-        Ilya A. Strebulaev</a>
+        IA Strebulaev</a>
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2021economic">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>    
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>    
     <span class="subtext-style"><a href="https://github.com/wgornall/Venture_Capital_Backed_Companies">
       Spreadsheet classifying companies as VC-backed</a>, you may also be interested in Jay Ritter's <a href="https://site.warrington.ufl.edu/ritter/ipo-data/">data</a>.
     </span>
@@ -418,17 +418,17 @@ data-bs-content="cite-gornall2023gender">
   <div class="elem-style">
     <a class="journal-style" href="https://ssrn.com/abstract=2681841">The Contracting and Valuation of Venture Capital-Backed Companies</a>
       with
-      <a href="https://ilyas1.people.stanford.edu/">Ilya A. Strebulaev,</a>
+      <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
 
-        In: Eckbo, B.E., Phillips,  G.M. , Sorensen, M. (eds) <b>Handbook of the Economics of Corporate Finance</b>  2023, Amsterdam: North-Holland, an imprint of Elsevier, 1, 3-76
+        In: BE Eckbo, GM Phillips,  M Sorensen (eds) <b>Handbook of the Economics of Corporate Finance</b>  2023, Amsterdam: North-Holland, an imprint of Elsevier, 1, 3-76
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2023vcvaluationcontracts">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
  
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>   
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>   
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
 
     <span class="subtext-style">A useful reference for faculty, students, and practitioners.
     </span>
@@ -440,28 +440,28 @@ data-bs-content="cite-gornall2023gender">
         href="https://link.springer.com/referencework/10.1007/978-3-030-38738-9">
       Venture Capital Valuation</a>
       with
-      <a href="https://ilyas1.people.stanford.edu/">Ilya A. Strebulaev,</a>
+      <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
 
-      In: Cumming, D., Hammer, B. (eds) <b>The Palgrave Encyclopedia of Private Equity</b> 2023, Cham: Springer International Publishing, 1-5
+      In: D Cumming, B Hammer (eds) <b>The Palgrave Encyclopedia of Private Equity</b> 2023, Cham: Springer International Publishing, 1-5
  
       <a class="cite-style block-label"  href="javascript:void(0)"data-bs-toggle="popover" data-bs-content="cite-gornall2023palgrave">
         <img height="10px" width="13px" src="files/cite.png">
         Cite
       </a>
 
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
   </div>
 
   <div class="elem-style">
     <a class="journal-style"
         href="https://hbr.org/2021/03/how-venture-capitalists-make-decisions">
       How Venture Capitalists Make Decisions</a>
-      with <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">Paul A. Gompers</a>, <a href="https://faculty.chicagobooth.edu/steven-kaplan">Steven N. Kaplan</a>, and <a href="https://ilyas1.people.stanford.edu/">Ilya A. Strebulaev,</a>
+      with <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">PA Gompers</a>, <a href="https://faculty.chicagobooth.edu/steven-kaplan">SN Kaplan</a>, <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
       <b>Harvard Business Review</b> 2021, 99.2 70-+
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Survey</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="survey-label block-label" href="javascript:void(0)">Surveys</a>   
   </div>
   <div class="heading-style" id="Teaching">
     Teaching Material
@@ -471,33 +471,33 @@ data-bs-content="cite-gornall2023gender">
 <a href="http://www.valuation.vc">
       Tool to value employee stock options</a>
 
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>   
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>   
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>   
     <span class="subtext-style">
-      You may also be interested in Andrew Metrick and Ayako Yasuda's <a href="http://vcvtools.com/">tool</a>
+      You may also be interested in A Metrick and A Yasuda's <a href="http://vcvtools.com/">tool</a>
     </span>
   </div>
 
   <div class="elem-style">
     <a  href="files/Teaching Slides - Contractual Terms and Valuation.pptx">
       Slides on post-money valuation versus value</a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>   
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>   
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>   
   </div>
 
   <div class="elem-style">
     <a href="files/Teaching Slides - Investment Selection.pptx">
         Slides discussing the venture capital investment selection process</a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
-<div class="survey-label block-label"><a class="block-label-link" href="javascript:void(0)">Survey</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
+<a class="survey-label block-label" href="javascript:void(0)">Surveys</a>   
   </div>
 
   <div class="elem-style">
     <a href="files/Course Outline Venture Capital (Undergrad) 2022 COMM 470_draft.docx">
       Undergraduate Course Outline COMM 470 Venture Capital</a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>   
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>   
 </div>
 
   <div class="heading-style" id="Policy">
@@ -507,16 +507,16 @@ data-bs-content="cite-gornall2023gender">
   <div class="elem-style">
     <a  href="files/perps_cftc_comment.pdf">
       Comment on CFTC Trading and Clearing of "Perpetual" Style Derivatives </a> 
- <div class="fi-label block-label"><a class="block-label-link" href="javascript:void(0)">Fintech/Crypto</a></div>  
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>   
+ <a class="fi-label block-label" href="javascript:void(0)">Fintech/Crypto</a>  
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>   
   </div>
   
   <div class="elem-style">
     <a  href="https://www.sec.gov/comments/s7-07-20/s70720-7214368-216888.pdf">
       Comment on SEC Proposed Rule on Good Faith Determinations of Fair Value </a>
-<div class="vc-label block-label"><a class="block-label-link" href="javascript:void(0)">VC</a></div>    
-<div class="valuation-label block-label"><a class="block-label-link" href="javascript:void(0)">Valuation</a></div>  
-<div class="contracts-label block-label"><a class="block-label-link" href="javascript:void(0)">Contracts</a></div>  
+<a class="vc-label block-label" href="javascript:void(0)">VC</a>    
+<a class="valuation-label block-label" href="javascript:void(0)">Valuation</a>  
+<a class="contracts-label block-label" href="javascript:void(0)">Contracts</a>  
   </div>
 
 
@@ -657,7 +657,7 @@ doi = {https://doi.org/10.1016/j.jfineco.2025.104063},
 <br>
 url = {https://www.sciencedirect.com/science/article/pii/S0304405X25000716},
 <br>
-author = {Rustam Abuzov and Will Gornall and Ilya A. Strebulaev},
+author = {Rustam Abuzov and Will Gornall and IA Strebulaev},
 <br>
 keywords = {Limited partners, FOIA, Venture capital, Public pensions},
 <br>
@@ -831,7 +831,7 @@ doi = {https://doi.org/10.1016/bs.hecf.2023.02.001},
 <br>
 url = {https://www.sciencedirect.com/science/article/pii/S2949964X23000012},
 <br>
-author = {Will Gornall and Ilya A. Strebulaev},
+author = {Will Gornall and IA Strebulaev},
 <br>
 }
 <br>
