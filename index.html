@@ -61,12 +61,13 @@
     a:hover { color: rgb(0, 100, 200);  }
 
     /* filters */
-    .filter { font-weight: 500; text-transform: uppercase; font-size: 90%; color: rgb(49, 155, 66); } 
+    .filter { font-weight: 600; border-color:rgb(49, 155, 66); border-width:1px;border-style: solid; 
+     text-transform: uppercase; font-size: 70%; color:#002145; background-color:#F0F0F0;  padding: .1rem; } 
 	.filter-link:hover {  color: rgb(0, 100, 200);  }
 	.nonhighlighted-topic{ display:none;}
-	.filter-text {  color: white; font-size: 130%;   font-weight: 600;   letter-spacing: 1px;  }
-	.filter-back {  color: white; font-size: 120%;   font-weight: 600;   letter-spacing: 1px;  }
-    .filter-box {  text-align:center;   background-color:  rgb(49, 155, 66); padding: .25rem;
+	.filter-text {   font-weight: 600;  color:white;  letter-spacing: 1px;  }
+    .filter-box {  text-align:center;  font-weight: 600;  border-width:1px;border-style: solid; 
+     text-transform: uppercase; background-color:#002145;  padding: .25rem;
 	display:none;	} 
 
 	/* popovers. */
@@ -114,15 +115,23 @@
         <img class="elem-style img-fluid" style="min-width: 100px;" src="files/willGornall1small.jpg">                
       </div>
       <div class="col px-4">
-        <span class="d-block text-nowrap"> Associate Professor of Finance</span>
-        <span class="d-block text-nowrap"> Advisory Council Chair in Finance </span>
-        <span class="d-block text-nowrap"> Director, Phillips, Hager & North Center for Financial Research</span>
-        <span class="d-block text-nowrap"> Sauder School of Business</span>
-        <span class="d-block text-nowrap"> University&nbsp;of&nbsp;British Columbia</span>
-        <span class="d-block text-nowrap"> 2053&nbsp;Main&nbsp;Mall,&nbsp;Vancouver</span>
-        <span class="d-block text-nowrap"> BC&nbsp;&nbsp;V6T&nbsp;1Z2,  Canada</span>
-        <span class="d-block text-nowrap"> (604)&nbsp;827-4372</span>
-        <a class="d-block text-nowrap" href="mailto:will.gornall@sauder.ubc.ca"> will.gornall@sauder.ubc.ca</a>
+        <span class="d-block text-nowrap"> Associate Professor of Finance,</span>
+        <span class="d-block text-nowrap"> Advisory Council Chair in Finance, </span>
+        <span class="d-block text-nowrap"> Director, Phillips, Hager & North Center for Financial Research,</span>
+        <span class="d-block"> <span class="text-nowrap"> Sauder School of Business,</span>
+       <span class="text-nowrap"> University of British Columbia,</span>
+       </span>
+        <span class="d-block">
+         <span class="text-nowrap"> 2053&nbsp;Main&nbsp;Mall,</span>
+          <span class="text-nowrap"> Vancouver,</span>
+           <span class="text-nowrap"> BC&nbsp; V6T&nbsp;1Z2,</span>
+            <span class="text-nowrap"> Canada</span>
+            </span>
+        <span class="d-block"> 
+        <span class="text-nowrap" >
+        <a href="mailto:will.gornall@sauder.ubc.ca"> will.gornall@sauder.ubc.ca</a>,</span>
+        <span class=" text-nowrap">(604)&nbsp;827-4372
+        </span></span>
       </div>
       <div class="col px-4 ">
         <a class="d-inline-block d-sm-block text-nowrap" href="files/Gornall_Will_CV.pdf" title="CV">
@@ -144,15 +153,16 @@
   </section>
 
   <section class="elem-style " style="min-width:400px;">
-		<div class='filter-box'> <span id="message-for-filter" class="filter-text">  </span> <a  class="filter-back" href="javascript:void(0)">   (reset)</a>  </div>
-		<span > Click to only show work on </span>
-        <a class="banking-filter filter" href="javascript:void(0)">Banking,</a>  
-        <a class="contracts-filter filter" href="javascript:void(0)">Contracts,</a>  
-        <a class="fi-filter filter" href="javascript:void(0)">Fintech/Crypto,</a>  
-        <a class="pe-filter filter" href="javascript:void(0)">PE,</a>  
-        <a class="survey-filter filter" href="javascript:void(0)">Surveys,</a>  
-        <a class="valuation-filter filter" href="javascript:void(0)">Valuation,</a>  
-        <a class="vc-filter filter" href="javascript:void(0)">VC.</a>    
+		<div class='filter-box'> <span id="message-for-filter" class="filter-text">  </span> <a  class="filter-text" href="javascript:void(0)">   (reset)</a>  </div>
+		<div style="padding-top:10px;"> <span> Click to only show work on </span>
+        <a class="banking-filter filter text-nowrap" href="javascript:void(0)">Banking,</a>  
+        <a class="contracts-filter filter text-nowrap" href="javascript:void(0)">Contracts,</a>  
+        <a class="fi-filter filter text-nowrap" href="javascript:void(0)">Fintech/Crypto,</a>  
+        <a class="pe-filter filter text-nowrap" href="javascript:void(0)">PE,</a>  
+        <a class="survey-filter filter text-nowrap" href="javascript:void(0)">Surveys,</a>  
+        <a class="valuation-filter filter text-nowrap" href="javascript:void(0)">Valuation,</a>  
+        <a class="vc-filter filter text-nowrap" href="javascript:void(0)">VC.</a>    
+        </div>
       </section>
       
       
@@ -166,11 +176,11 @@
 		<span class="wip-text" >
 		  Venture Capital Around the World</span>
 		  with
-		  <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
+		  <a class="text-nowrap" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
 			PA Gompers,</a>
-		  <a href="https://faculty.chicagobooth.edu/steven-kaplan">
+		  <a class="text-nowrap" href="https://faculty.chicagobooth.edu/steven-kaplan">
 			SN Kaplan,</a>
-		  <a href="https://ilyas1.people.stanford.edu/">
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 			work in progress
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gompers2021venture"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
@@ -184,10 +194,10 @@
 		<span class="wip-text" >
 		  Selling to Yourself: Continuation Vehicles in Private Equity </span>
 		  with
-		  <a href="https://www.rustamabuzov.com/">R Abuzov,</a>
-		  <a href="https://sites.google.com/view/sophieshive">SA Shive,</a>
-		  <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
-		  <a href="https://u.osu.edu/weisbach.2/">MS  Weisbach,</a>
+		  <a class="text-nowrap" href="https://www.rustamabuzov.com/">R Abuzov,</a>
+		  <a class="text-nowrap" href="https://sites.google.com/view/sophieshive">SA Shive,</a>
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
+		  <a class="text-nowrap" href="https://u.osu.edu/weisbach.2/">MS  Weisbach,</a>
 			work in progress
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gompers2021venture"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 	<span class='detail-text'>Topics:</span>
@@ -201,7 +211,7 @@
 		  Perpetual Futures and Basis Risk: Evidence from Cryptocurrency </a>
 		  with
 		  M Rinaldi, 
-		<a href="https://www.bschool.cuhk.edu.hk/staff/xiao-yizhou/">
+		<a class="text-nowrap" href="https://www.bschool.cuhk.edu.hk/staff/xiao-yizhou/">
 			Y Xiao,</a> 
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2025perps"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 		 <span class="detail-text"> A previous version of this manuscript was distributed as "Funding Payments Crisis-Proofed Bitcoin’s
@@ -216,7 +226,7 @@
 			href="https://ssrn.com/abstract=3725240">
 		  A Valuation Model of Venture Capital-Backed Companies with Multiple Financing Rounds</a>
 		  with
-		  <a href="https://ilyas1.people.stanford.edu/">
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2021valuation"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 	<span class='detail-text'>Topics:</span>
@@ -242,7 +252,7 @@
 			href="https://ssrn.com/abstract=2681841">
 		  The Economic Impact of Venture Capital: Evidence from Public Companies</a>
 		  with
-		  <a href="https://ilyas1.people.stanford.edu/">
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2021economic"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 		<span class="detail-text"><a href="https://github.com/wgornall/Venture_Capital_Backed_Companies">
@@ -260,8 +270,8 @@
 		<a class="paper-text" href="https://ssrn.com/abstract=4235337">
 		  The Value of Privacy and the Choice of Limited Partners by Venture Capitalists</a>
 		  with
-		  <a href="https://www.rustamabuzov.com/">R Abuzov,</a>
-		  <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
+		  <a class="text-nowrap" href="https://www.rustamabuzov.com/">R Abuzov,</a>
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
 		 <span class="journal-text">Journal of Financial Economics</span> 2025, 169(7), 104063
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-abuzov2025value"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 	<span class='detail-text'>Topics:</span>
@@ -274,13 +284,13 @@
 		<a class="paper-text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4720785">
 			Customer Data Access and Fintech Entry: Early Evidence from Open Banking</a>
 		  with
-		  <a href="https://www.taniababina.com/">T Babina,</a>
-		  <a href="https://sites.google.com/site/saleembahaj/home">SA Bahaj,</a>
-		  <a href="https://sites.google.com/view/greg-buchak/">G Buchak,</a>
-		  <a href="https://sites.google.com/view/flippodemarco">F De Marco,</a>
-		  <a href="https://www.bankofengland.co.uk/research/researchers/angus-foulis">AK Foulis,</a>
-		  <a href="https://www.francescomazzola.org/">F Mazzola,</a> 
-		  <a href="https://profiles.imperial.ac.uk/t.yu18">T Yu,</a>
+		  <a class="text-nowrap" href="https://www.taniababina.com/">T Babina,</a>
+		  <a class="text-nowrap" href="https://sites.google.com/site/saleembahaj/home">SA Bahaj,</a>
+		  <a class="text-nowrap" href="https://sites.google.com/view/greg-buchak/">G Buchak,</a>
+		  <a class="text-nowrap" href="https://sites.google.com/view/flippodemarco">F De Marco,</a>
+		  <a class="text-nowrap" href="https://www.bankofengland.co.uk/research/researchers/angus-foulis">AK Foulis,</a>
+		  <a class="text-nowrap" href="https://www.francescomazzola.org/">F Mazzola,</a> 
+		  <a class="text-nowrap" href="https://profiles.imperial.ac.uk/t.yu18">T Yu,</a>
 		  <span class="journal-text">Journal of Financial Economics</span> 2025, 169(7), 103950
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-babina2025openbanking"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>  
 		<span class="detail-text"> 
@@ -295,13 +305,13 @@
 		<a class="paper-text" href="https://ssrn.com/abstract=3912230">
 		  Do Employees Cheer for Private Equity? The Heterogeneous Effects of Buyouts on Job Quality</a>
 		  with
-		  <a href="https://freeman.tulane.edu/faculty-research/finance/oleg-gredil">
+		  <a class="text-nowrap" href="https://freeman.tulane.edu/faculty-research/finance/oleg-gredil">
 			O Gredil,</a>
-		  <a href="http://www.sabrina-howell.com/">
+		  <a class="text-nowrap" href="http://www.sabrina-howell.com/">
 			ST Howell,</a>
-		  <a href="https://scholar.google.com/citations?user=bGVdLz4AAAAJ">
+		  <a class="text-nowrap" href="https://scholar.google.com/citations?user=bGVdLz4AAAAJ">
 			X Liu,</a>
-		  <a href="https://economics.sas.upenn.edu/people/jason-sockin">
+		  <a class="text-nowrap" href="https://economics.sas.upenn.edu/people/jason-sockin">
 			J Sockin,</a>
 		  <span class="journal-text">Management Science</span> 2025, 71(5), 4287-4317 
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2025employees"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
@@ -314,7 +324,7 @@
 		<a class="paper-text"
 			href="https://ssrn.com/abstract=3301982">
 		  Gender, Race, and Entrepreneurship: A Randomized Field Experiment on Venture Capitalists and Angels</a>
-		  with <a href="https://ilyas1.people.stanford.edu/">
+		  with <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 
 		   <span class="journal-text">Management Science</span> forthcoming 
@@ -329,11 +339,11 @@
 		<a class="paper-text" href="https://ssrn.com/abstract=3669345">
 		  Venture Capitalists and COVID-19</a>
 		  with
-		  <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
+		  <a class="text-nowrap" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
 			PA Gompers,</a>
-		  <a href="https://faculty.chicagobooth.edu/steven-kaplan">
+		  <a class="text-nowrap" href="https://faculty.chicagobooth.edu/steven-kaplan">
 			SN Kaplan,</a>
-		  <a href="https://ilyas1.people.stanford.edu/">
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 		  <span class="journal-text">Journal of Financial and Quantitative Analysis</span> 2021, 56(7), 2474-2499
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gompers2021venture"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
@@ -346,14 +356,14 @@
 	  <div class="elem-style filterable">
 		<a class="paper-text" href="https://ssrn.com/abstract=2955455"> Squaring Venture Capital Valuations with Reality</a>
 		  with
-		  <a href="https://ilyas1.people.stanford.edu/"> IA Strebulaev,</a>
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/"> IA Strebulaev,</a>
 		  <span class="journal-text">Journal of Financial Economics</span> 2020, 135(1), 120–143
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2020squaring"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 		<span class="detail-text"> 
-	 <a href="https://www.pesummitseries.com/wp-content/uploads/2021/04/210406-Doriot-Award_guidelines-PES-2021.pdf">Doriot Award winner.</a>
-		<a href="files/Teaching Slides - Contractual Terms and Valuation.pptx">Teaching slides.</a>
-		<a href="https://github.com/wgornall/Squaring_Venture_Capital_Valuations_With_Reality">Code.</a>
-		<a href="https://www.valuation.vc">Tool to value employee stock options.</a> 
+	 <a class="text-nowrap" href="https://www.pesummitseries.com/wp-content/uploads/2021/04/210406-Doriot-Award_guidelines-PES-2021.pdf">Doriot Award winner.</a>
+		<a class="text-nowrap" href="files/Teaching Slides - Contractual Terms and Valuation.pptx">Teaching slides.</a>
+		<a class="text-nowrap" href="https://github.com/wgornall/Squaring_Venture_Capital_Valuations_With_Reality">Code.</a>
+		<a class="text-nowrap" href="https://www.valuation.vc">Tool to value employee stock options.</a> 
 		</span>
 	<span class='detail-text'>Topics:</span>
 	<a class="contracts-filter filter" href="javascript:void(0)">Contracts,</a>   
@@ -366,11 +376,11 @@
 			href="https://ssrn.com/abstract=2801385">
 		  How Do Venture Capitalists Make Decisions?</a>
 		  with
-		  <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
+		  <a class="text-nowrap" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">
 			PA Gompers,</a>
-		  <a href="https://faculty.chicagobooth.edu/steven-kaplan">
+		  <a class="text-nowrap" href="https://faculty.chicagobooth.edu/steven-kaplan">
 			SN Kaplan,</a>
-		  <a href="https://ilyas1.people.stanford.edu/">
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 		  <span class="journal-text">Journal of Financial Economics</span> 2020, 135(1), 169–190
 
@@ -391,7 +401,7 @@
 			href="https://ssrn.com/abstract=2347107">
 		  Financing as a Supply Chain: The Capital Structure of Banks and Borrowers</a>
 		  with
-		  <a href="https://ilyas1.people.stanford.edu/">
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">
 			IA Strebulaev,</a>
 		  <span class="journal-text">Journal of Financial Economics</span> 2018, 129(3), 510-530
 
@@ -408,8 +418,8 @@
 		<a class="paper-text" href="https://ssrn.com/abstract=1101796">
 		  Locally-Capped Investment Products and the Retail Investor</a>
 		  with
-		  <a href="https://en.grenoble-em.com/node/4191/carole-bernard">C Bernard,</a>
-		  <a href="https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/phelim-boyle/index.html">
+		  <a class="text-nowrap" href="https://en.grenoble-em.com/node/4191/carole-bernard">C Bernard,</a>
+		  <a class="text-nowrap" href="https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/phelim-boyle/index.html">
 			P Boyle,</a>
 		  <span class="journal-text">Journal of Derivatives</span> 2011, 18(4), 72-88
 
@@ -428,9 +438,9 @@
 	  <div class="elem-style filterable">
 		<a class="paper-text" href="https://ssrn.com/abstract=2681841">The Contracting and Valuation of Venture Capital-Backed Companies</a>
 		  with
-		  <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
 
-			In: <a href="http://faculty.tuck.dartmouth.edu/espen-eckbo/">BE Eckbo</a>, <a href="http://faculty.tuck.dartmouth.edu/gordon-phillips/">GM Phillips</a>,  <a href="https://faculty.tuck.dartmouth.edu/morten-sorensen/">M Sorensen</a> (eds) <span class="journal-text">Handbook of the Economics of Corporate Finance</span>  2023, Amsterdam: North-Holland, an imprint of Elsevier, 1, 3-76
+			In: <a class="text-nowrap" href="http://faculty.tuck.dartmouth.edu/espen-eckbo/">BE Eckbo</a>, <a class="text-nowrap" href="http://faculty.tuck.dartmouth.edu/gordon-phillips/">GM Phillips</a>,  <a class="text-nowrap" href="https://faculty.tuck.dartmouth.edu/morten-sorensen/">M Sorensen</a> (eds) <span class="journal-text">Handbook of the Economics of Corporate Finance</span>  2023, Amsterdam: North-Holland, an imprint of Elsevier, 1, 3-76
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2023vcvaluationcontracts"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 		<span class="detail-text">A useful reference for faculty, students, and practitioners.    </span>
 	<span class='detail-text'>Topics:</span>
@@ -446,9 +456,9 @@
 			href="https://link.springer.com/referencework/10.1007/978-3-030-38738-9">
 		  Venture Capital Valuation</a>
 		  with
-		  <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
+		  <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
 
-		  In: <a href="https://sites.google.com/view/douglascumming/">D Cumming</a>, <a href="https://www.lancaster.ac.uk/lums/people/benjamin-hammer">B Hammer</a> (eds) <span class="journal-text">The Palgrave Encyclopedia of Private Equity</span> 2023, Cham: Springer International Publishing, 1-5
+		  In: <a class="text-nowrap" href="https://sites.google.com/view/douglascumming/">D Cumming</a>, <a class="text-nowrap" href="https://www.lancaster.ac.uk/lums/people/benjamin-hammer">B Hammer</a> (eds) <span class="journal-text">The Palgrave Encyclopedia of Private Equity</span> 2023, Cham: Springer International Publishing, 1-5
 	 
 		  <span class="detail-text" ><a  href="javascript:void(0)" data-bs-toggle="popover" data-bs-content="cite-gornall2023palgrave"><img height="10px" width="13px" src="files/cite.png">&nbsp;Cite.</a> </span>
 	<span class='detail-text'>Topics:</span>
@@ -462,7 +472,7 @@
 		<a class="paper-text"
 			href="https://hbr.org/2021/03/how-venture-capitalists-make-decisions">
 		  How Venture Capitalists Make Decisions</a>
-		  with <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">PA Gompers,</a> <a href="https://faculty.chicagobooth.edu/steven-kaplan">SN Kaplan,</a> <a href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
+		  with <a class="text-nowrap" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6463">PA Gompers,</a> <a class="text-nowrap" href="https://faculty.chicagobooth.edu/steven-kaplan">SN Kaplan,</a> <a class="text-nowrap" href="https://ilyas1.people.stanford.edu/">IA Strebulaev,</a>
 		  <span class="journal-text">Harvard Business Review</span> 2021, 99.2 70-+
 	<span class='detail-text'>Topics:</span>
 	<a class="survey-filter filter" href="javascript:void(0)">Surveys,</a>   
@@ -900,8 +910,9 @@
 		sections.forEach(el => {el.classList.add('nonhighlighted-topic');  });
 		articles.forEach(el => {el.classList.add('nonhighlighted-topic');  });
 		filter_text.forEach(el => {el.style.display='block';  }); 
-		message_for_filter.textContent='Only showing work related to '+e.target.textContent.slice(0,-1);
-
+        const topic = baseLabelTextFrom(e.target);
+        const n = countFilterablesFor(labelClass);
+        message_for_filter.textContent = `Showing ${n} ${n === 1 ? 'item' : 'items'} related to ${topic}`;
 		document.querySelectorAll(`.${labelClass}.filter`).forEach(lbl => { 
 		  if (!lbl.parentElement) return;
 		  lbl.parentElement.classList.remove('nonhighlighted-topic'); 
@@ -911,6 +922,53 @@
 		});
 	  });
 	});
+
+// Helper: strip trailing " (123)" and punctuation from a label's text
+function baseLabelTextFrom(el) {
+  const raw = el.textContent.trim();
+  // capture main text, optionally followed by " (digits)" and a trailing punctuation mark
+  const m = raw.match(/^(.*?)(?:\s*\(\d+\))?\s*([.,;:]?)$/);
+  return (m ? m[1] : raw).trim();
+}
+
+// Count how many .filterable blocks contain links of a given topic class
+function countFilterablesFor(labelClass) {
+  const set = new Set();
+  document.querySelectorAll(`.filterable .${labelClass}.filter`).forEach(el => {
+    const container = el.closest('.filterable');
+    if (container) set.add(container);
+  });
+  return set.size;
+}
+
+function addCountsToTopFilters() {
+  // the top filter section is the parent of .filter-box (unique on page)
+  const filterBox = document.querySelector('.filter-box');
+  if (!filterBox || !filterBox.parentElement) return;
+
+  // only the TOP row filters (avoid tags inside each item)
+  const topFilters = filterBox.parentElement.querySelectorAll('a.filter');
+
+  topFilters.forEach(label => {
+    // find the specific "xxx-filter" class (besides 'filter')
+    const labelClass = [...label.classList].find(c => c !== 'filter' && c.endsWith('-filter'));
+    if (!labelClass) return;
+
+    const n = countFilterablesFor(labelClass);
+
+    // preserve trailing punctuation (comma/period) in your labels
+    const raw = label.textContent.trim();
+    const m = raw.match(/^(.*?)([.,;:]?)$/);
+    const base = (m ? m[1] : raw).trim();
+    const punct = m ? m[2] : '';
+
+    // inject count
+    label.innerHTML = `${base} <span class="filter-count">(${n})</span>${punct}`;
+  });
+}
+
+// run once on load
+addCountsToTopFilters();
 
 </script>
 
